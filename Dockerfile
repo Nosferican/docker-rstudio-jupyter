@@ -20,3 +20,6 @@ RUN cd /usr/local/bin \
     && bash Miniconda3-latest-Linux-x86_64.sh -bfp \
     && sudo ln -s ~/miniconda3/bin/conda /usr/local/bin \
     && sudo ln -s ~/miniconda3/bin/python /usr/local/bin
+# R
+RUN install2.r --error \
+    lmerTest
